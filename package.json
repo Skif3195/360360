@@ -1,14 +1,14 @@
 {
   "name": "telegram-360-bot",
   "version": "1.0.0",
+  "description": "Anonymous 360 feedback Telegram bot with Supabase",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "axios": "^1.6.8",
+    "axios": "^1.6.0",
     "dotenv": "^16.3.1",
-    "telegraf": "^4.12.2"
+    "telegraf": "^4.16.2"
   }
 }

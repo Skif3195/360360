@@ -36,12 +36,12 @@ const questionScene = new Scenes.WizardScene(
     ctx.wizard.state.answers.timestamp = new Date().toISOString();
 
     const response = await axios.post(
-      `${SUPABASE_URL}/rest/v1/${SUPABASE_TABLE}`,
+      \`\${SUPABASE_URL}/rest/v1/\${SUPABASE_TABLE}\`,
       ctx.wizard.state.answers,
       {
         headers: {
           apikey: SUPABASE_API_KEY,
-          Authorization: `Bearer ${SUPABASE_API_KEY}`,
+          Authorization: \`Bearer \${SUPABASE_API_KEY}\`,
           'Content-Type': 'application/json'
         }
       }
